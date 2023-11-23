@@ -1,0 +1,85 @@
+.auth{
+    display: flex;
+    gap: 2rem;
+    margin: 0 2rem;
+    padding-top: calc(70px + 2rem);
+}
+
+.registerContainer p,
+.loginContainer p{
+    font-weight: 600;
+    margin: 20px 0;
+    color: #000;
+}
+
+.loginContainer{
+    border-top: 6px solid var(--main-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    color: black;
+    width: 30%;
+    padding: 2rem; 
+    margin: .5rem 0;   
+}
+
+.loginContainer p:nth-child(1){
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.loginContainer img{
+    width: 100%
+}
+
+.registerContainer{
+    border-top: 6px solid var(--main-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    color: black;
+    width: 70%;
+    padding: 2rem;
+    margin: .5rem 0;
+}
+
+.registerContainer p:nth-child(1){
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.formDiv label{
+    font-weight: 500;
+}
+
+form button{
+    width: fit-content;
+    outline: none;
+    border: none;
+    background: rgb(230, 87, 30);
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+form input{
+    padding: 8px 16px;
+}
+
+@media (max-width: 800px) {
+    .auth{
+        flex-direction: column;
+    }
+
+    .loginContainer, 
+    .registerContainer{
+        width: 100%;
+    }
+}
