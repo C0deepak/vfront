@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../pages/auth/auth.css';
 import { useAuth } from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
+import Loader from './Loader';
 
 const Login = () => {
     const { token, loggedIn, login, logout } = useAuth();
@@ -9,6 +10,7 @@ const Login = () => {
     const [luser, setLuser] = useState({
         email: '', password: ''
     })
+    const [loading, setLoading] = useState(false)
 
     let name, value;
     const handleInputsLogin = (e) => {
@@ -19,6 +21,7 @@ const Login = () => {
     }
 
     const handleSubmit = async (e) => {
+        setLoading(true)
         e.preventDefault()
         try {
             const response = await fetch('https://vedantabackend.onrender.com/api/v1/login', {
@@ -33,6 +36,7 @@ const Login = () => {
             if (response.status === 200) {
                 const data = await response.json();
                 login(data.token, data.user)
+                setLoading(false)
                 console.log(data);
                 navigate('/')
             }
@@ -40,11 +44,13 @@ const Login = () => {
         } catch (error) {
             alert(error)
             console.error('Error submitting the form:', error);
+            setLoading(false)
         }
     }
 
     return (
         <div className='loginContainer'>
+            {loading && <Loader />}
             <p>LOGIN</p>
             <form>
                 <div className='formDiv'>

@@ -1,14 +1,14 @@
 import React from 'react'
+import { useAuth } from '../context/authContext';
 import { Link, useNavigate } from 'react-router-dom'
 import '../style.css'
-import { useAuth } from '../context/authContext';
 
 const Navbar = () => {
     const { user, loggedIn, login, logout } = useAuth();
     const navigate = useNavigate()
     const callLogOut = () => {
-        navigate('/')
         logout()
+        navigate('/')
     }
     return (
         <nav>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 {loggedIn ? (
                     <div className='showOne'>
                         <Link to='/profile'>Profile</Link>
-                        <Link onClick={callLogOut}>Logout</Link>
+                        <div className='logoutBtn' onClick={callLogOut}>Logout</div>
                     </div>
                 ) : (
                     <div className='showOne'>

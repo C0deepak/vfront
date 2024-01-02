@@ -20,11 +20,13 @@ nav {
   gap: 20px;
 }
 
-.navProfile a{
+.navProfile a,
+.navProfile .logoutBtn{
   text-decoration: none;
   color: #fff;
   background: rgb(230, 87, 30);
   padding: 8px 16px;
+  cursor: pointer;
 }
 
 footer{
@@ -82,6 +84,24 @@ footer{
   margin: 0 auto;
   gap: 2rem;
   min-height: 80vh;
+}
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(153, 153, 153, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader img{
+  max-width: 100px;
+  height: 100px;
 }
 
 @media (max-width: 800px) {

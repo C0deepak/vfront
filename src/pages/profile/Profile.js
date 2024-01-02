@@ -18,10 +18,9 @@ const Profile = () => {
             <form method='GET' className="profilePageWrapper">
                 <div className="c1">
                     <div className="c1r0">
-                        <img src={userData?.qr} alt="QR code" />
-                        {/* {userData?.status === 'verifying' && (<div className="profilePageStatusg">{userData?.status}</div>)}
-                        {userData?.status === 'verified' && (<div className="profilePageStatusd">{userData?.status}</div>)} */}
-                        <div className="profilePageStatusd">{userData?.status}</div>
+                        <img src={userData?.avatar} alt="QR code" />
+                        {userData?.status === 'verifying' && (<div className="profilePageStatusg">{userData?.status}</div>)}
+                        {userData?.status === 'verified' && (<div className="profilePageStatusd">{userData?.status}</div>)}
                     </div>
                     <div className="c1r1">
                         <div className="ppmd">
@@ -46,6 +45,7 @@ const Profile = () => {
                 </div>
                 <div className="c2">
                     <div className="c2r1Wrapper">
+                        <div className='qrImage'><img src={userData?.qr} alt="QR code" /></div>
                         <div className="c2r1">
                             <div className='upperMargin'>VEHICLE DETAILS</div>
                             <div className="c2r1Inside">

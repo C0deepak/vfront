@@ -7,7 +7,7 @@ const Home = () => {
       <div className="homeLanding">
         <section className="home" id="home">
           <div className="text">
-            <h1><span>Welcome</span> to <br /> QR Scanner</h1><p>Lorem ipsum dolor sit amet consectetur <br />dipisicing elit. Assumenda, quasi.</p>
+            <h1><span>Welcome</span> to <br /> QR Scanner</h1><p>Seamlessly scan QR codes using our user-friendly application, simplifying <br />the process of accessing information effortlessly</p>
           </div>
         </section>
 
@@ -25,8 +25,20 @@ const Home = () => {
 
               <div className="about-text">
                 <span>About Us</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta eligendi neque nemo praesentium itaque saepe, dicta quae eum quidem modi, suscipit in natus placeat ipsa obcaecati ipsum aperiam amet et beatae recusandae earum minus?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa ab qui reprehenderit hic modi, eos temporibus aliquam.</p>
+                <p>
+                  Welcome to our Vehicle Registration App! We are dedicated to simplifying and streamlining the process of registering vehicles within our company premises.
+                </p>
+                <p>
+                  Our mission is to provide a seamless and efficient solution for managing and monitoring vehicle entries, ensuring security and convenience for all stakeholders.
+                </p>
+                <h4>Our Commitment:</h4>
+                <p>
+                  We are committed to continuous improvement and staying at the forefront of technological advancements. Our development team works tirelessly to enhance the functionality of our app, addressing the evolving needs of our users.
+                </p>
+                <h4>Values:</h4>
+                <p>
+                  Transparency, innovation, and user-centric design are at the core of our values. We believe in open communication with our users and welcome feedback that helps us refine and optimize our services.
+                </p>
                 <p className="btn">Learn More</p>
               </div>
 
@@ -39,7 +51,7 @@ const Home = () => {
 
             <div className="row">
               <div className="heading">
-                <span>Our Services</span>
+                <span>Key Features</span>
                 <h1>We Provide Best Services</h1>
               </div>
             </div>
@@ -49,10 +61,10 @@ const Home = () => {
               <div className="column">
                 <div className="card">
                   <div className="icon-wrapper">
-                    <i className="fa-solid fa-id-card"></i>
+                    <i class="fa-solid fa-qrcode"></i>
                   </div>
-                  <h3>Documnets</h3>
-                  <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                  <h3>QR Code Registration</h3>
+                  <p>Generate QR codes for quick and easy vehicle registration, with full details and proper research.
                   </p>
                 </div>
               </div>
@@ -61,11 +73,11 @@ const Home = () => {
               <div className="column">
                 <div className="card">
                   <div className="icon-wrapper">
-                    <i className="fa-solid fa-file"></i>
+                    <i class="fa-solid fa-stopwatch"></i>
                   </div>
-                  <h3>Driver Details</h3>
+                  <h3>Instant Access</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.
+                    Expedite entry at the gate using QR code scans, it's time effecient than normal checkings
                   </p>
                 </div>
               </div>
@@ -74,12 +86,11 @@ const Home = () => {
               <div className="column">
                 <div className="card">
                   <div className="icon-wrapper">
-                    <i className="fas fa-wrench"></i>
+                    <i class="fa-solid fa-fingerprint"></i>
                   </div>
-                  <h3>Checklist</h3>
+                  <h3>Enhanced Security</h3>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-                    consequatur necessitatibus eaque.
+                    Ensure the safety and security of our premises through efficient vehicle management.
                   </p>
                 </div>
               </div>
@@ -97,35 +108,7 @@ const Home = () => {
 
                 <div className="testimonial-box-container">
 
-                  <div className="testimonial-box">
 
-                    <div className="box-top">
-
-                      <div className="profile">
-
-                        <div className="profile-img">
-                          <img src='/img/rev1.jpg' alt='rev1' />
-                        </div>
-
-                        <div className="name-user">
-                          <strong>Adarsh kumar</strong>
-                          <span>adarshs738@gmsail.com</span>
-                        </div>
-                      </div>
-
-                      <div className="reviews">
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="fas fa-star"></i>
-                        <i className="far fa-star"></i>
-                      </div>
-                    </div>
-
-                    <div className="client-comment">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
-                    </div>
-                  </div>
 
                   <div className="testimonial-box">
 
@@ -138,8 +121,8 @@ const Home = () => {
                         </div>
 
                         <div className="name-user">
-                          <strong>Adarsh kumar</strong>
-                          <span>adarshs738@gmsail.com</span>
+                          <strong>Rahul Shah</strong>
+                          <span>shahrahul@gmail.com</span>
                         </div>
                       </div>
 
@@ -153,7 +136,7 @@ const Home = () => {
                     </div>
 
                     <div className="client-comment">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                      <p>The security features in this app provide a sense of confidence. Knowing that my vehicle is registered and monitored efficiently adds a layer of safety to the entire experience.</p>
                     </div>
                   </div>
                   <div className="testimonial-box">
@@ -167,8 +150,8 @@ const Home = () => {
                         </div>
 
                         <div className="name-user">
-                          <strong>Adarsh kumar</strong>
-                          <span>adarshs738@gmsail.com</span>
+                          <strong>Aishwarya Singh</strong>
+                          <span>aishwarya@gmail.com</span>
                         </div>
                       </div>
 
@@ -182,7 +165,36 @@ const Home = () => {
                     </div>
 
                     <div className="client-comment">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                      <p>I've been using the app for a while, and the team's dedication to improvement is evident. They listen to user feedback, making the app more user-friendly with each update. Great job!</p>
+                    </div>
+                  </div>
+                  <div className="testimonial-box">
+
+                    <div className="box-top">
+
+                      <div className="profile">
+
+                        <div className="profile-img">
+                          <img src='/img/rev1.jpg' alt='rev1' />
+                        </div>
+
+                        <div className="name-user">
+                          <strong>Raj Kapoor</strong>
+                          <span>raj@gmail.com</span>
+                        </div>
+                      </div>
+
+                      <div className="reviews">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="far fa-star"></i>
+                      </div>
+                    </div>
+
+                    <div className="client-comment">
+                      <p>I'm amazed by the simplicity of the registration process. The QR code system is a game-changer, and it makes entering the premises a breeze.</p>
                     </div>
                   </div>
                 </div>
@@ -206,8 +218,8 @@ const Home = () => {
                 <div className="address details">
                   <i className="fas fa-map-marker-alt" style={{ color: "gray" }}></i>
                   <div className="topic">Address</div>
-                  <div className="text-one">BIT SINDRI</div>
-                  <div className="text-two">SINDRI, SHEHARPURA</div>
+                  <div className="text-one">Coaster Road</div>
+                  <div className="text-two">New Delhi, India</div>
                 </div>
 
                 <div className="phone details">
@@ -220,8 +232,8 @@ const Home = () => {
                 <div className="email details">
                   <i className="fas fa-envelope" style={{ color: "gray" }}></i>
                   <div className="topic">Email</div>
-                  <div className="text-one">adarshs738@gmail.com</div>
-                  <div className="text-two">adarshs738@gmail.com</div>
+                  <div className="text-one">shamanitech@gmail.com</div>
+                  <div className="text-two">shamani.auto@gmail.com</div>
                 </div>
 
               </div>

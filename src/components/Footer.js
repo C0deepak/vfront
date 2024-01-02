@@ -5,7 +5,7 @@ import '../style.css'
 const Footer = () => {
     return (
         <footer>
-            <div className="footerCopy">copyright &copy; IETE 2022-23</div>
+            <div className="footerCopy">copyright &copy; shamani enterprises 2022-23</div>
         </footer>
     )
 }

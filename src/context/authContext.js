@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
@@ -15,7 +14,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = () => {
         setLoggedIn(false);
-        setToken(null)
+        setToken('')
         setUser(null)
     };
 
